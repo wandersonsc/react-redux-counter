@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/wandersonsc/react-redux-counter.svg?branch=master)](https://travis-ci.org/wandersonsc/react-redux-counter)
 
 This is more than your typical Counter app, we are going to use Redux, and you may be think: `Hey! ain't redux a little overkill?`. Yes, maybe, but we need to challenge ourselves, and in the process we are going to take advantage of **Redux Store**, **Reducer**, **CombineReducers**, **Destructuring** and **Material-ui**.
-Also, We are going to write unit test to make sure the our code is working properly.
+Also, We are going to write unit test to ensure, that if anything changes we will be able to cover it with a test.
 
 ## Technology Stack
 
@@ -25,6 +25,7 @@ git clone https://github.com/wandersonsc/react-redux-counter
 
    - If you are on Linux: `npm start`
    - If you are on Mac: `npm start`
+   - If you are on Win: `npm start`
 
 # Two different ways of dealing with mapStateToPros
 
@@ -53,7 +54,7 @@ It is more cleaner to read and more easier to some of you to understand.
 
 ### Reducer
 
-Make sure your reducer always return something, otherwise, you'll end up with an **undefined** state
+Make sure your reducer always return something, otherwise, you'll end up with an **undefined** state.
 
 ```js
 export default (state = initState, action) => {
@@ -74,8 +75,4 @@ export default (state = initState, action) => {
       return state;
   }
 };
-```
-
-```
-
 ```

@@ -1,6 +1,6 @@
 import { COUNTER } from "../Actions/types";
 
-const initState = {
+export const initState = {
   value: 0,
   color_status: false
 };
