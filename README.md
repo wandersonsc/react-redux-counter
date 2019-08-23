@@ -1,5 +1,7 @@
 ## React & Redux Counter
 
+[![Build Status](https://travis-ci.org/wandersonsc/react-redux-counter.svg?branch=master)](https://travis-ci.org/wandersonsc/react-redux-counter)
+
 This is more than your typical Counter app, we are going to use Redux, and you may be think: `Hey! ain't redux a little overkill?`. Yes, maybe, but we need to challenge ourselves, and in the process we are going to take advantage of **Redux Store**, **Reducer**, **CombineReducers**, **Destructuring** and **Material-ui**.
 Also, We are going to write unit test to make sure the our code is working properly.
 
@@ -8,6 +10,7 @@ Also, We are going to write unit test to make sure the our code is working prope
 - React
 - Redux
 - Jest
+- Enzyme
 - Material-ui
 
 ## Get the code and start the server.
