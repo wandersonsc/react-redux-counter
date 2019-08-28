@@ -18,6 +18,7 @@ describe("Counter Reducer", () => {
 
   it("should decrement the counter by 1", () => {
     const action = { type: COUNTER.SUBTRACT_VALUE };
+    
     const newState = counter(initState, action);
     expect(newState.value).toBe(initState.value - 1);
   });
