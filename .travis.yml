@@ -1,3 +1,4 @@
+# Set the build language to NodeJS
 language: node_js
 
 node_js:
@@ -7,6 +8,9 @@ cache:
   directories:
     - node_modules
 
+# command to run tests
 script:
   - npm test
+
+after_success:
   - bash <(curl -s https://codecov.io/bash)
