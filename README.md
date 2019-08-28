@@ -23,9 +23,19 @@ git clone https://github.com/wandersonsc/react-redux-counter
 
 2. Run it! Do **either** one of these based on what OS you are using:
 
+```sh
    - If you are on Linux: `npm start`
    - If you are on Mac: `npm start`
    - If you are on Win: `npm start`
+```
+
+## Testing
+
+Run your tests with a command like this:
+
+```sh
+jest && codecov
+```
 
 # Two different ways of dealing with mapStateToPros
 
