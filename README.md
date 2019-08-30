@@ -1,6 +1,7 @@
 ## React & Redux Counter
 
 [![Build Status](https://travis-ci.org/wandersonsc/react-redux-counter.svg?branch=master)](https://travis-ci.org/wandersonsc/react-redux-counter)
+[![codecov](https://codecov.io/gh/wandersonsc/react-redux-counter/branch/master/graph/badge.svg)](https://codecov.io/gh/wandersonsc/react-redux-counter)
 
 This is more than your typical Counter app, we are going to use Redux, and you may be think: `Hey! ain't redux a little overkill?`. Yes, maybe, but we need to challenge ourselves, and in the process we are going to take advantage of **Redux Store**, **Reducer**, **CombineReducers**, **Destructuring** and **Material-ui**.
 Also, We are going to write unit test to ensure, that if anything changes we will be able to cover it with a test.
@@ -24,9 +25,9 @@ git clone https://github.com/wandersonsc/react-redux-counter
 2. Run it! Do **either** one of these based on what OS you are using:
 
 ```sh
-   - If you are on Linux: `npm start`
-   - If you are on Mac: `npm start`
-   - If you are on Win: `npm start`
+   - If you are on Linux: npm start
+   - If you are on Mac: npm start
+   - If you are on Win: npm start
 ```
 
 ## Testing

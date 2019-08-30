@@ -6,12 +6,12 @@ import Home from "./Home";
 
 function App() {
   return (
-    <React.Fragment>
+    <div data-test-id="appWrapper">
       <CssBaseline />
       <Container maxWidth="sm">
         <Home />
       </Container>
-    </React.Fragment>
+    </div>
   );
 }
 
