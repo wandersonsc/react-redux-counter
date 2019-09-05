@@ -1,17 +1,18 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import { addValue, subtractValue } from "../../Actions/actions";
-
+import { addValue, subtractValue } from "../../Redux/Actions/actions";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPlus, faMinus } from "@fortawesome/free-solid-svg-icons";
 
 export class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="content">
         <h1 data-test-id="homeComponent">React & Redux Counter</h1>
         <Card>
           <CardContent>
@@ -22,17 +23,17 @@ export class Home extends Component {
           <CardActions>
             <Button
               variant="contained"
-              color={this.props.color_status === true ? "secondary" : null}
+              color={this.props.isActive === true ? "secondary" : null}
               onClick={this.props.addValue}
             >
-              +
+              <FontAwesomeIcon icon={faPlus} />
             </Button>
             <Button
               variant="contained"
-              color={this.props.color_status === true ? "secondary" : null}
+              color={this.props.isActive === false ? "secondary" : null}
               onClick={this.props.subtractValue}
             >
-              -
+              <FontAwesomeIcon icon={faMinus} />
             </Button>{" "}
           </CardActions>
         </Card>
@@ -43,16 +44,16 @@ export class Home extends Component {
 
 // const mapStateToProps = state => {
 //   const {
-//     counter: { value, color_status }
+//     counter: { value, isActive }
 //   } = state;
 //   console.log("state: ", state);
 //   return {
 //     value,
-//     color_status
+//     isActive
 //   };
 // };
 
 export default connect(
-  ({ counter: { value, color_status } }) => ({ value, color_status }),
+  ({ counter: { value, isActive } }) => ({ value, isActive }),
   { addValue, subtractValue }
 )(Home);

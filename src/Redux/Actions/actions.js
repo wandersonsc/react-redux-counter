@@ -4,7 +4,7 @@ import { COUNTER } from "./types";
 export const addValue = () => {
   return {
     type: COUNTER.ADD_VALUE,
-    color_status: true
+    isActive: true
   };
 };
 
@@ -12,6 +12,6 @@ export const addValue = () => {
 export const subtractValue = () => {
   return {
     type: COUNTER.SUBTRACT_VALUE,
-    color_status: false
+    isActive: false
   };
 };

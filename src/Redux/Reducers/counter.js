@@ -2,7 +2,7 @@ import { COUNTER } from "../Actions/types";
 
 export const initState = {
   value: 0,
-  color_status: false
+  isActive: false
 };
 
 export default (state = initState, action) => {
@@ -11,13 +11,13 @@ export default (state = initState, action) => {
       return {
         ...state,
         value: state.value + 1,
-        color_status: action.color_status
+        isActive: action.isActive
       };
     case COUNTER.SUBTRACT_VALUE:
       return {
         ...state,
         value: state.value - 1,
-        color_status: action.color_status
+        isActive: action.isActive
       };
     default:
       return state;
