@@ -38,7 +38,7 @@ Run your tests with a command like this:
 jest && codecov
 ```
 
-# 4. Two different ways of dealing with mapStateToPros
+## 4. Two different ways of dealing with mapStateToPros
 
 ### mapStateToPros
 
